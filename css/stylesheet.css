@@ -6,13 +6,16 @@
 :root {
     /* These are global variables that you can use in your CSS */
     --black:black;
+    --orange:rgb(240, 54, 8);
+    --navy:rgb(30, 45, 122);
+    --cream:antiquewhite;
     --dark-grey:#333;
-    --mid-grey:#666;
     --light-grey:#999;
     --white:white;
     --accent-colour:rgb(255, 255, 153);
-    --headline-font: lust, serif;
-    --body-font: nunito-sans, sans-serif;
+    --h1HEADING: "Luxurious Script", cursive;
+    --headline-font: "Cormorant Garamond", serif;   
+    --body-font: "Josefin Sans", sans-serif;
     --horizontal-shift:6px;
     --section-padding-top:120px;
     }
@@ -21,25 +24,38 @@
     padding: 0;
     transition: 0.5s;
 
+
     }
 html {
         scroll-behavior: smooth;
+        background-color: var(--cream);
+
         }
 
 body {
         font-family: var(--body-font);
         }
-        h1, h2, h3, h4, h5, h6 {
+        h2, h3, h4, h5, h6 {
         font-family: var(--headline-font);
+
         }
         h1 {
-        font-size: calc(40px + (72 - 40) * (100vw - 400px) / (1800 - 400));
-        margin-bottom: 3rem;
+        font-size: calc(175px + (72 - 40) * (100vw - 400px) / (1800 - 400));
+        margin-bottom: 1rem;
+        font-family: var(--h1HEADING);
+        text-align: center;
+        color: var(--orange);
+
         }
         h2 {
-        font-size: calc(32px + (48 - 32) * (100vw - 400px) / (1800 - 400));
-        margin-bottom: 1.5rem;
-        }
+            font-size: calc(27px + (48 - 32) * (100vw - 400px) / (1800 - 400));
+            margin-bottom: 1.5rem;
+            }
+#introduction    h2 {
+                font-size: calc(27px + (48 - 32) * (100vw - 400px) / (1800 - 400));
+                margin-bottom: 1.5rem;
+                text-align: center;
+                }
         h3 {
         font-size: calc(20px + (28 - 20) * (100vw - 400px) / (1800 - 400));
         }
@@ -57,26 +73,27 @@ body {
             color: var(--black);
             }
     .btn {
-            background-color: var(--black);
+            background-color: var(--orange);
             border: none;
-            color: var(--white);
+            color: var(--cream);
             padding: 15px 32px;
             text-align: center;
             text-decoration: none;
             display: inline-block;
             font-size: calc(16px + (20 - 16) * (100vw - 400px) / (1800 - 400));
             width: fit-content;
+            border-radius: 1cap;
             }
     .btn:hover {
-            background-color: var(--accent-colour);
-            color: var(--black);
+            background-color: var(--white);
+            color: var(--navy);
             padding-left: calc(32px + var(--horizontal-shift));
             }
     .btn:visited {
             color: var(--white);
             }
     .btn:hover:visited {
-            color: var(--black);
+            color: var(--orange);
             }      
 
 /* Styling the Navigation */
@@ -98,7 +115,9 @@ nav {
 
         img {
             width:100%;
-        }
+            border-radius: 1cap;
+
+                }
     nav ul {
         display: flex;
         list-style-type: none;
@@ -111,13 +130,13 @@ nav {
         }
     nav ul li a {
         text-decoration: none;
-        color: var(--black);
+        color: var(--cream);
         margin: 20px;
         }
     nav ul li a:hover {
         text-decoration: none;
-        color: var(--dark-grey);
-        background: var(--accent-colour);
+        color: var(--orange);
+        background: var(--white);
         }
 
         #logo {
@@ -128,6 +147,8 @@ nav {
             #logo img {
             height: 2rem;
             width: auto;
+            border-radius: 0cap;
+
             }
         #menu-icon, #close-icon {
             margin-left: auto;
@@ -213,11 +234,13 @@ padding-left:var(--horizontal-shift);
     #contact ul {
     display: flex;
     list-style-type: none;
-    margin-bottom:1rem;
+    margin-bottom:2rem;
+    margin-top:2rem;
+
     }
     #contact ul li a {
     text-decoration: none;
-    color: var(--accent-colour);
+    color: var(--cream);
     margin: 0 20px 0 0;
     font-size: 32px;
     }
@@ -227,22 +250,22 @@ padding-left:var(--horizontal-shift);
     }
 /* Styling to invert the colour scheme. Add this class to a section */
 .inverted-colours {
-    background:var(--black);
-    color:var(--white);
+    background:var(--orange);
+    color:var(--cream);
     }
     .inverted-colours a {
-    color:var(--white);
+    color:var(--cream);
     }
     .inverted-colours a:visited {
-    color:var(--white);
+    color:var(--cream);
     }
     .inverted-colours .btn {
-    color:var(--black);
-    background:var(--white);
+    color:var(--orange);
+    background:var(--cream);
     }
     .inverted-colours .btn:hover {
-    color:var(--black);
-    background:var(--accent-colour);
+    color:var(--orange);
+    background:var(--white);
     }
 
 
