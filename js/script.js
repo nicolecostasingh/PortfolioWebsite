@@ -1,8 +1,7 @@
-// Can also be included with a regular script tag
 $(document).ready(function () {
-    // Code will launch when the page has loaded
     $('#menu-icon, #close-icon').click(function () {
+        console.log('Icon clicked'); // Add this line to check if the event is triggered
         $('nav').toggleClass("navexpanded");
         return false;
-        });
+    });
 });
