@@ -63,7 +63,7 @@ body {
 
         }
         p {
-        font-size: calc(15px + (20 - 16) * (100vw - 400px) / (1800 - 400));
+        font-size: calc(13px + (20 - 16) * (100vw - 400px) / (1800 - 400));
         margin: 1rem;
         color: var(--dark-grey);
         }
@@ -129,6 +129,20 @@ a {
         .btn2:hover:visited {
                 color: var(--orange);
                 }  
+
+
+
+
+
+/* SCROLL FOR MORE*/
+
+.scroll{
+    text-align: center;
+    margin-top: -5rem;
+}
+
+
+
 
 /* Styling the Navigation */
 header {
