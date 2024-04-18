@@ -116,7 +116,8 @@ a {
                 width: fit-content;
                 border-radius: 1cap;
                 margin: 0 auto;
-                margin-top: 3rem;
+                margin-top: 1rem;
+                margin-left: 1rem;
                 }
         .btn2:hover {
                 background-color: var(--white);
